@@ -11,7 +11,7 @@ function addbook() {
           author:aut,
           description:desc,
           table_of_contents:tab,
-          cover:cov,
+          //cover:cov,
           price:pri,
           is_available:av});
 

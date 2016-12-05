@@ -14,7 +14,7 @@ App.createCollection({
         {name: "author", type: "text", required: true},
         {name: "description", type: "html", required: true},
         {name: "table_of_contents", type: "html", required: true},
-        {name: "cover", type: "file", required: true},
+        {name: "cover", type: "file"},
         {name: "price", type: "float", required: true},
         {name: "is_available", type: "boolean", required: true},
         {name: "ebook", type: "file"},
