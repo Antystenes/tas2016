@@ -6,6 +6,7 @@ require("./lib/field-types/role.js")(App);
 require("./lib/access-strategy/roles.js")(App);
 require("./lib/collections/users.js")(App);
 
+
 App.createCollection({
     name: "books",
     fields: [
@@ -20,7 +21,7 @@ App.createCollection({
         {name: "audiobook", type: "file"},
     ],
     access_strategy: {
-        default: ["roles", ["admin"]],
+        default: "public", //["roles", ["admin"]],
         retrieve: "public",
         delete: "noone",
     }

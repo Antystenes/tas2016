@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>PTTP</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/shop-homepage.css" rel="stylesheet">
+</head>
+<body><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container"><div class="navbar-header"><button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="home.html">Strona Główna</a>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="catalog.html">Księgarnia<span class="caret"></a>
+    <ul class="dropdown-menu"><li><a href="#">Fantastyka</a>
+    </li>
+    <li><a href="#">Kryminał</a>
+    </li>
+    <li><a href="#">Sensacja</a>
+    </li>
+    <li><a href="#">Horror</a>
+    </li>
+    <li><a href="#">Biografie</a>
+    </li>
+    <li><a href="#">Poradniki</a>
+    </li>
+    </ul>
+</li>
+<li id="addbook"><a href="addbook.html">Dodaj książkę</a>
+</li>
+<li id="loglink"><a href="login.html">Zaloguj się</a>
+</li>
+<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">O Nas<span class="caret"></a>
+    <ul class="dropdown-menu"><li><a href="#">Informacje</a>
+    </li>
+    <li><a href="#">Autorzy</a>
+    </li>
+    <li><a href="#">Kontakt</a>
+    </li>
+    </ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container"><div class="row"><div class="col-md-3"><p class="lead" style="font-size: 200%">PTTP</p>
+    <div class="list-group"><a class="list-group-item" href="#">PROMOCJE</a>
+        <a class="list-group-item" href="#">BESTSELLERY</a>
+        <a class="list-group-item" href="#">NOWOŚCI</a>
+    </div>
+</div>
+<div class="col-md-9"> <script src="js/addbook.js"></script>
+    <form>
+        <div class="form-group">
+            <label for="title" class="control-label">Tytuł:</label>
+            <input type="text" class="form-control" id="title"></input>
+            <label for="author" class="control-label">Autor:</label>
+            <input type="text" class="form-control" id="author"></input>
+            <label for="description" class="control-label">Opis:</label>
+            <input type="text" class="form-control" id="description" rows="10"></input>
+            <label for="table_of_contents" class= "control-label">Spis Treści:</label><input type="text" class="form-control" id="table_of_contents" size="300%"></input>
+            <label for="cover" class="control-label">Okładka:</label><input class="form-control" id="cover" type="file"></input>
+            <label for="price" class="control-label">Cena:</label><input class="form-control" id="price" type="float"></input>
+            <label for="is_available" class="control-label">Dostępność:</label><input class="form-control" id="is_available" type="boolean"></input>
+            <button type="button" class="btn btn-default" onclick="addbook()">Dodaj</button>
+    </form>
+        </div>
+</div>
+</div>
+<div class="container"><hr>
+    <footer>
+        <div class="row">
+            <div class="col-lg-12"><p>Copyright &copy; Projekt TAS styczeń 2017</p>
+                <p id="debug"></p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/mainscript.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
